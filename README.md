@@ -9,7 +9,7 @@
 - The package is using [ARSO Vreme](https://meteo.arso.gov.si/uploads/probase/www/observ/surface/text/sl/observationAms_si_latest.xml) data.
 
 ### Usage
-<>
+
 ```
 import arso2weather as arso
 
