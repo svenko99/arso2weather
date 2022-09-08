@@ -14,7 +14,6 @@ setup(
     name="arso2weather",
     version=VERSION,
     author="Sven Ulcar",
-    author_email="<sven.ulcar@gmail.com>",
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
     long_description=LONG_DESCRIPTION,
