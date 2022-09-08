@@ -8,6 +8,12 @@
 
 - The package is using [ARSO Vreme](https://meteo.arso.gov.si/uploads/probase/www/observ/surface/text/sl/observationAms_si_latest.xml) data.
 
+### Installation
+
+```
+pip3 install arso2weather
+```
+
 ### Usage
 
 ```
