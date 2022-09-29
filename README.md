@@ -1,12 +1,15 @@
-# Arso2weather
+# ☁️ Arso2weather
 
-### What is it?
+### 🤔 What is it?
 
-- Arso2weather is a small package that allows you to look up the current temperature of specific Slovenian cities.
+- Arso2weather is a small package that allows you to look up the current temperature of most Slovenian cities
 
-- Temperature is displayed in Celsius (C°).
+- It can also output sunrise/sunset of Slovenian cities
 
-- The package is using [ARSO Vreme](https://meteo.arso.gov.si/uploads/probase/www/observ/surface/text/sl/observationAms_si_latest.xml) data.
+- Temperature is displayed in Celsius (C°)
+
+- The package is using [ARSO Vreme](https://meteo.arso.gov.si/uploads/probase/www/observ/surface/text/sl/observationAms_si_latest.xml) data
+
 
 ### Installation
 
@@ -17,14 +20,14 @@ pip3 install arso2weather
 ### Usage
 
 ```
-import arso2weather as arso
+from arso2weather import Arso2Weather
 
-city_temperature = arso.weather_temp("Ljubljana")
-city2_temperature = arso.weather_temp("Logatec", round_temp=False)
-all_cites_temperature = arso.all_weather_temp()
+city = Arso2Weather("Ljubljana")
+temp = city.weather_temp()
+sunrise = city.sunrise()
+sunset = city.sunset()
+all_cities_temp = Arso2Weather().all_weather_temp()
 
-print(city_temperature)
-print(all_cites_temperature)
-print(all_cites_temperature["Maribor"])
-
+print(temp, sunrise, sunset)
+print(all_cities_temp)
 ```
