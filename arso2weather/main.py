@@ -27,7 +27,7 @@ class Arso2Weather:
             # last line in list avoids that random inputs like ("pt") are not outputed
         ]
 
-        # It returns equals_city if input equals "domain_longTitle" else word_in_cit    y
+        # It returns equals_city if input equals "domain_longTitle" else word_in_city
         # I did this because some "domain_longTitle" of cites are not exactly like city i.e "Koper" city has "Luka-Koper" domain_longTitle
         self.xml_of_city = equals_city or word_in_city
 
