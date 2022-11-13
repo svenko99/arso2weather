@@ -9,7 +9,7 @@ root = ET.fromstring(response.content).findall("metData")
 
 
 class Arso2Weather:
-    def __init__(self, city=None) -> None:
+    def __init__(self, city="None") -> None:
 
         self.city = city
 
